@@ -1,0 +1,43 @@
+.homepage-hero {
+   min-height: 90vh;
+   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.5)),
+      url(/assets/images/hero.jpg);
+   background-size: cover;
+   background-position: top;
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 8rem;
+}
+
+.site-title {
+   text-transform: uppercase;
+   color: $color-white;
+   font-weight: 500;
+   // backface-visibility: hidden;
+   margin-bottom: 60px;
+
+   &__main {
+      display: block;
+      font-size: 3.75rem;
+      letter-spacing: 2rem;
+      animation: moveInLeft 1s ease-out;
+
+      /*
+   animation-name: moveInLeft;
+   animation-duration: 1s;
+   animation-timing-function: ease-out;
+   */
+   }
+
+   &__sub {
+      display: block;
+      font-size: 1.25rem;
+      letter-spacing: 1rem;
+      animation: moveInRight 1s ease-out;
+   }
+}
