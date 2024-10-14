@@ -10,14 +10,14 @@
       <meta name="description" content="Simple editor to create and publish social media posts" />
 
       <!-- Fonts -->
-      <!-- <style>
+      <style>
          @font-face {
             font-family: 'Inter';
             src: url('/assets/fonts/inter/Inter-VariableFont_slnt\,wght-subset.woff2') format('woff2');
             font-weight: 100 900;
             /* font-display: swap; */
          }
-      </style> -->
+      </style>
    </head>
 
    <body class="app">
@@ -26,7 +26,7 @@
          <!-- Logo -->
          <div class="site-logo">
             <a href="/">
-               <!-- <img class="site-logo__img" src="./assets/img/logo-white.png" alt="Site logo" /> -->
+               <img class="site-logo__img" src="./assets/img/logo-white.png" alt="Site logo" />
             </a>
 
             <!-- Navbar -->
@@ -46,15 +46,23 @@
          </div>
       </header>
 
-      <!-- Hero Section -->
-      <div class="homepage-hero">
-         <h1 class="site-title">
-            <span class="site-title__main">Outdoors</span>
-            <span class="site-title__sub">is where life happens</span>
-         </h1>
-         <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
-      </div>
+      <main>
+         <!-- Hero Section -->
+         <div class="homepage-hero">
+            <h1 class="site-title">
+               <span class="site-title__main">Outdoors</span>
+               <span class="site-title__sub">is where life happens</span>
+            </h1>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+         </div>
 
+         <!-- About Section -->
+         <section class="about-section">
+            <div class="u-center-text u-margin-bottom-big">
+               <h2 class="section-heading">Exciting tours for adventurous people</h2>
+            </div>
+         </section>
+      </main>
       <script type="module" src="main.js"></script>
    </body>
 </html>

@@ -1,9 +1,35 @@
 body {
-   font-family: sans-serif;
+   font-family: Inter;
    font-weight: 400;
-   /*font-size: 16px;*/
    line-height: 1.7;
-   color: $color-grey-dark;
+   color: var(--color-grey-dark);
    padding: 1.875rem;
-   background-color: rgb(211, 211, 211);
+}
+
+.site-title {
+   text-transform: uppercase;
+   color: var(--color-white);
+   font-weight: 500;
+   // backface-visibility: hidden;
+   margin-bottom: 3.75rem;
+
+   &__main {
+      display: block;
+      font-size: 3.75rem;
+      letter-spacing: 2rem;
+      animation: moveInLeft 1s ease-out;
+
+      /*
+   animation-name: moveInLeft;
+   animation-duration: 1s;
+   animation-timing-function: ease-out;
+   */
+   }
+
+   &__sub {
+      display: block;
+      font-size: 1.25rem;
+      letter-spacing: 1rem;
+      animation: moveInRight 1s ease-out;
+   }
 }

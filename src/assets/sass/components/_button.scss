@@ -18,7 +18,7 @@
 
    &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      box-shadow: 0 1rem 2rem rgba(var(--color-black), 0.2);
 
       &::after {
          transform: scaleX(1.1) scaleY(1.4);
@@ -30,24 +30,24 @@
    &:focus {
       outline: none;
       transform: translateY(-1px);
-      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+      box-shadow: 0 0.5rem 1rem rgba(var(--color-grey-dark), 0.2);
    }
 
    &--white {
-      background-color: $color-white;
-      color: $color-grey-dark;
+      background-color: var(--color-white);
+      color: var(--color-grey-dark);
 
       &::after {
-         background-color: $color-white;
+         background-color: var(--color-white);
       }
    }
 
    &--green {
-      background-color: $color-primary;
-      color: $color-white;
+      background-color: var(--color-primary);
+      color: var(--color-white);
 
       &::after {
-         background-color: $color-primary;
+         background-color: var(--color-primary);
       }
    }
 
